@@ -9,7 +9,10 @@ class BoostPlugin(commands.Cog):
 
         print(message.type)
         if message.type == discord.MessageType.premium_guild_subscription:
-            embed = discord.Embed(title=f"**Nitro Boost**", description=f"Thank you so much for boosting <a:BoostingAnimated:707512475246919712> !", color=0xff0000)
+            tit="ㅤㅤㅤㅤ` F ` ` R ` ` E ` ` E ` ` Z ` ` E ` ` ! `"
+            des="ㅤㅤ❝**Look there! Is that a new tagger for freeze tag?**❞\nㅤㅤㅤㅤ❝ **Players __MUST__ freeze when tagged!**❞\n❝**Run, even if you're on ice, let it go and run for your life!**❞\nㅤㅤ❝**SHOOT, you caught me! Here's your award..**❞\nㅤ `congrats!` __all perks are listed in the pinned messages__\nㅤ\⛸️ Message <@950936706914344960> to claim tagger perks!"
+            embed = discord.Embed(title=tit, description=des, color=0xff0000)
+            embed.set_thumbnail(url="https://i.pinimg.com/736x/4c/67/2f/4c672f707cead8e5109893cf236a37e8.jpg")
             m = await message.channel.send(embed=embed)
             await m.add_reaction("<a:Heartanimated:707510241276985425>")
             
